@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Need Help?</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif; color: #313338;
+      background: radial-gradient(circle at 20% 20%, #e9e7ff 0, transparent 35%),
+                  radial-gradient(circle at 80% 80%, #dce9ff 0, transparent 35%), #f8f9fc;
+    }
+    .container { width: 100%; max-width: 620px; text-align: center; }
+    .card {
+      padding: 56px 42px; border: 1px solid rgba(88,101,242,.12); border-radius: 24px;
+      background: rgba(255,255,255,.86);
+      box-shadow: 0 20px 60px rgba(80,85,130,.12), 0 4px 15px rgba(80,85,130,.06);
+      backdrop-filter: blur(12px);
+    }
+    .icon {
+      width: 82px; height: 82px; margin: 0 auto 26px; padding: 18px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 22px; background: #5865f2; box-shadow: 0 12px 30px rgba(88,101,242,.25);
+    }
+    .icon svg { width: 100%; height: 100%; fill: white; }
+    .badge {
+      display: inline-block; margin-bottom: 16px; padding: 7px 13px; border-radius: 999px;
+      background: #eef0ff; color: #5865f2; font-size: 13px; font-weight: 700;
+      letter-spacing: .3px;
+    }
+    h1 {
+      margin-bottom: 14px; color: #1e1f22; font-size: clamp(30px, 6vw, 44px);
+      line-height: 1.1; font-weight: 800; letter-spacing: -1.2px;
+    }
+    .description {
+      max-width: 460px; margin: 0 auto 30px; color: #5c6170;
+      font-size: 17px; line-height: 1.7;
+    }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center; gap: 11px;
+      min-width: 190px; padding: 14px 24px; border-radius: 12px;
+      background: #5865f2; color: white; text-decoration: none; font-size: 16px;
+      font-weight: 700; box-shadow: 0 8px 20px rgba(88,101,242,.25);
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); background: #4752c4; box-shadow: 0 12px 28px rgba(88,101,242,.32); }
+    .button:active { transform: translateY(0); }
+    .button svg { width: 21px; height: 21px; fill: currentColor; }
+    .footer { margin-top: 22px; color: #8b8f9b; font-size: 13px; }
+    @media (max-width: 480px) {
+      .card { padding: 42px 24px; border-radius: 20px; }
+      .icon { width: 72px; height: 72px; padding: 16px; }
+      .description { font-size: 15px; }
+      .button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="icon">
+        <svg viewBox="0 0 127.14 96.36" xmlns="http://www.w3.org/2000/svg">
+          <path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0l-3.2 6.56a97.68 97.68 0 0 0-29.4 0L45.67 0a105.89 105.89 0 0 0-26.24 8.08C2.8 32.65-1.7 56.6.55 80.22a105.73 105.73 0 0 0 32.25 16.14l7.86-10.6a68.6 68.6 0 0 1-12.38-5.9l3.04-2.37a75.12 75.12 0 0 0 64.5 0l3.06 2.37a68.9 68.9 0 0 1-12.4 5.9l7.85 10.6a105.59 105.59 0 0 0 32.25-16.14c2.65-27.38-4.54-51.11-19.88-72.15ZM42.45 65.69c-6.3 0-11.49-5.76-11.49-12.84S36 40 42.45 40s11.56 5.75 11.49 12.85c0 7.08-5.08 12.84-11.49 12.84Zm42.24 0c-6.3 0-11.49-5.76-11.49-12.84S78.24 40 84.69 40s11.56 5.75 11.49 12.85c0 7.08-5.08 12.84-11.49 12.84Z"/>
+        </svg>
+      </div>
+      <span class="badge">Need a little help?</span>
+      <h1>We're here to help.</h1>
+      <p class="description">If you need assistance, have a question, or simply want to talk,
+        join our Discord community. Our team and community members are ready to help you out.</p>
+      <a class="button" href="https://discord.gg/Skv8MxqEdF" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 127.14 96.36" xmlns="http://www.w3.org/2000/svg">
+          <path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0l-3.2 6.56a97.68 97.68 0 0 0-29.4 0L45.67 0a105.89 105.89 0 0 0-26.24 8.08C2.8 32.65-1.7 56.6.55 80.22a105.73 105.73 0 0 0 32.25 16.14l7.86-10.6a68.6 68.6 0 0 1-12.38-5.9l3.04-2.37a75.12 75.12 0 0 0 64.5 0l3.06 2.37a68.9 68.9 0 0 1-12.4 5.9l7.85 10.6a105.59 105.59 0 0 0 32.25-16.14c2.65-27.38-4.54-51.11-19.88-72.15ZM42.45 65.69c-6.3 0-11.49-5.76-11.49-12.84S36 40 42.45 40s11.56 5.75 11.49 12.85c0 7.08-5.08 12.84-11.49 12.84Zm42.24 0c-6.3 0-11.49-5.76-11.49-12.84S78.24 40 84.69 40s11.56 5.75 11.49 12.85c0 7.08-5.08 12.84-11.49 12.84Z"/>
+        </svg>
+        Join our Discord
+      </a>
+      <p class="footer">Free to join · Community support · Friendly environment</p>
+    </section>
+  </main>
+</body>
+</html>
