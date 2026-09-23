@@ -3,7 +3,7 @@
   "env": {
     "BACKEND_URL": "http://wally.hidencloud.com:24620/",
     "DISCORD_CLIENT_ID": "1543274582520111104",
-    "DASHBOARD_REDIRECT_URI": "https://imagehost.bond/dashboard.html",
+    "DASHBOARD_REDIRECT_URI": "https://dasg-b92blol.vercel.app/dashboard.html",
     "MEDIA_ORIGIN": "https://imagehost.bond"
   },
   "rewrites": [
